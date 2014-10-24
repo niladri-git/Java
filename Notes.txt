@@ -1,0 +1,38 @@
+
+D:\Workspaces\Git\Java>javac com\companyname\bank\*.java
+
+D:\Workspaces\Git\Java>java com.companyname.bank.App
+Hello World!
+Hello Util !!!
+
+D:\Workspaces\Git\Java>javac com\companyname\bank\*.java
+
+D:\Workspaces\Git\Java>java com.companyname.bank.App
+Hello World!
+Hello Util !!!
+
+D:\Workspaces\Git\Java>jar -cvf Hello.jar com\companyname\bank\*.class
+added manifest
+adding: com/companyname/bank/App.class(in = 518) (out= 346)(deflated 33%)
+adding: com/companyname/bank/Util.class(in = 399) (out= 283)(deflated 29%)
+
+D:\Workspaces\Git\Java>java -cp Hello.jar com.companyname.bank.App
+Hello World!
+Hello Util !!!
+
+D:\Workspaces\Git\Java>jar -tvf Hello.jar
+     0 Fri Oct 24 21:11:18 IST 2014 META-INF/
+    68 Fri Oct 24 21:11:18 IST 2014 META-INF/MANIFEST.MF
+   518 Fri Oct 24 21:09:08 IST 2014 com/companyname/bank/App.class
+   399 Fri Oct 24 21:09:08 IST 2014 com/companyname/bank/Util.class
+
+D:\Workspaces\Git\Java>jar -xvf Hello.jar
+  created: META-INF/
+ inflated: META-INF/MANIFEST.MF
+ inflated: com/companyname/bank/App.class
+ inflated: com/companyname/bank/Util.class
+
+D:\Workspaces\Git\Java>type META-INF\MANIFEST.MF
+Manifest-Version: 1.0
+Created-By: 1.7.0_51 (Oracle Corporation)
+
